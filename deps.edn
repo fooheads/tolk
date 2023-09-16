@@ -1,5 +1,5 @@
 {:deps
- {com.fooheads/stdlib {:mvn/version "0.1.23"}}
+ {com.fooheads/stdlib {:mvn/version "0.3.3"}}
 
  :aliases
  {:dev
@@ -14,7 +14,7 @@
 
   :test/cljs
   {:extra-paths ["test"]
-   :extra-deps {org.clojure/clojurescript {:mvn/version "1.11.54"}
+   :extra-deps {org.clojure/clojurescript {:mvn/version "1.11.121"}
                 olical/cljs-test-runner   {:mvn/version "3.8.0"}}
    :main-opts ["-m" "cljs-test-runner.main"]}
 
@@ -22,4 +22,3 @@
   :build
   {:deps {com.fooheads/build-clj {:mvn/version "1.0.0"}}
    :ns-default fooheads.build}}}
-
